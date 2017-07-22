@@ -7,7 +7,7 @@ Akka Http Bootstrap
 [![jonato.de](https://img.shields.io/badge/Version-1.0-brightgreen.svg)](https://innFactory.de)
 
 ## Info
-A [Giter8][g8] template for a akka http service with swagger, slick and flyway database migration. You can use it to create your own REST Services on top of the lightbend stack.
+This is a boilerplate template for a akka http service with slick and flyway database migration. You can use it to create your own REST Services on top of the lightbend stack.
 
 ### Requirements
 * JDK8 [http://www.oracle.com/technetwork/java/javase/downloads/index.html](http://www.oracle.com/technetwork/java/javase/downloads/index.html))
@@ -93,5 +93,3 @@ Tobias Jonas
 Copyright (C) 2017 [innFactory Cloud- & DataEngineering](https://innFactory.de)
 
 Published under the Apache 2 License.
-
-[g8]: http://www.foundweekends.org/giter8/
