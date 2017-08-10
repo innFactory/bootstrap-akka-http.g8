@@ -30,13 +30,12 @@ class DummyServiceRoute(val authService: AuthService, val dummyService: DummySer
     new ApiResponse(code = 403, message = "Auth failed"),
     new ApiResponse(code = 500, message = "Internal server error")
   ))
-  def routeGetAll = path("") {
-    pathEndOrSingleSlash {
+  def routeGetAll = pathEndOrSingleSlash {
       get {
         complete(getAll.map(_.asJson))
       }
     }
-  }
+  
 
 
   @Path("/{dummyId}")

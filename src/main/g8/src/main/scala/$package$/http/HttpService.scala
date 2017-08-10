@@ -21,7 +21,7 @@ class HttpService(authService: AuthService,
   val swaggerRouter = new SwaggerUIRoute()
   val swaggerDocService = new SwaggerDocService(httpHost, httpPort, actorSystem)
 
-  val settings = CorsSettings.defaultSettings.copy(allowedMethods = List(GET, POST, HEAD, OPTIONS, DELETE))
+  val settings = CorsSettings.defaultSettings.copy(allowedMethods = List(GET, POST, PUT, HEAD, OPTIONS, DELETE))
 
   // \$COVERAGE-OFF\$Routes are tested seperatly
   val routes =
