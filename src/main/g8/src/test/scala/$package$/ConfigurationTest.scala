@@ -14,7 +14,7 @@ class ConfigurationTest extends WordSpec with Matchers with Configuration {
       jdbcUrl shouldBe "jdbc:postgresql://localhost:25535/database-name"
       dbUser.isEmpty shouldBe false
       dbPassword.isEmpty shouldBe false
-      authCognito.startsWith("http") shouldBe true
+      authCognitoPoolId.isEmpty shouldBe false
       allowAll shouldBe false
     }
   }

@@ -4,7 +4,7 @@ import akka.actor.ActorSystem
 import akka.stream.ActorMaterializer
 import com.github.swagger.akka._
 import com.github.swagger.akka.model.Info
-import $package$.http.routes.{AuthServiceRoute, DummyServiceRoute}
+import $package$.http.routes.DummyServiceRoute
 import io.swagger.models.ExternalDocs
 import io.swagger.models.auth.{ApiKeyAuthDefinition, In}
 
@@ -17,7 +17,7 @@ class SwaggerDocService(address: String, port: Int, system: ActorSystem)
   override implicit val actorSystem: ActorSystem = system
   override implicit val materializer: ActorMaterializer = ActorMaterializer()
   override val apiTypes = Seq(
-    ru.typeOf[AuthServiceRoute], ru.typeOf[DummyServiceRoute]
+    ru.typeOf[DummyServiceRoute]
   )
   override val host = address + ":" + port
   override val info = Info(version = "1.0")

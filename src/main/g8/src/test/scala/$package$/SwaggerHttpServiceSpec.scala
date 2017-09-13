@@ -7,7 +7,6 @@ import $package$.utils.Configuration
 import akka.http.scaladsl.model.ContentTypes._
 import akka.http.scaladsl.model.StatusCodes._
 import org.scalatest.BeforeAndAfterAll
-
 class MinimalSwaggerHttpServiceSpec
   extends BaseServiceTest with BeforeAndAfterAll with Configuration {
 

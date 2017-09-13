@@ -4,6 +4,7 @@ object Version {
   final val akka = "2.5.3"
   final val akkaHttp = "10.0.8"
   final val akkaHttpCirce = "1.17.0"
+  final val akkaJwt = "1.1.1"
   final val Scala = "2.11.8"
   final val AkkaLog4j = "1.4.0"
   final val Log4j = "2.8.2"
@@ -12,7 +13,6 @@ object Version {
   final val akkaHttpCors = "0.2.1"
   final val slickRepo = "1.4.3"
   final val postgresql = "9.4-1206-jdbc42"
-  final val nimbusds = "4.23"
   final val circe = "0.6.1"
   final val slick = "3.2.0"
   final val flyway = "3.2.1"
@@ -28,6 +28,7 @@ object Library {
   val akkaStream = "com.typesafe.akka" %% "akka-stream" % Version.akka
   val akkaHttpCors = "ch.megard" %% "akka-http-cors" % Version.akkaHttpCors
   val akkaHttpCirce =   "de.heikoseeberger" %% "akka-http-circe" % Version.akkaHttpCirce
+  val akkaJwt = "de.innfactory" %% "akka-jwt" % Version.akkaJwt
 
   val log4jCore = "org.apache.logging.log4j" % "log4j-core" % Version.Log4j
   val slf4jLog4jBridge = "org.apache.logging.log4j" % "log4j-slf4j-impl" % Version.Log4j
@@ -38,8 +39,6 @@ object Library {
   val postgresql =  "org.postgresql" % "postgresql"% Version.postgresql
   val slickRepo =  "com.byteslounge" %% "slick-repo" % Version.slickRepo
   val flywaydb = "org.flywaydb" % "flyway-core" % Version.flyway
-
-  val nimbusds = "com.nimbusds" % "nimbus-jose-jwt" % Version.nimbusds
 
   val circeCore = "io.circe" %% "circe-core" % Version.circe
   val circeGeneric = "io.circe" %% "circe-generic" % Version.circe

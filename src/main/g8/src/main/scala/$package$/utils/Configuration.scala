@@ -18,7 +18,7 @@ trait Configuration {
   val dbUser = databaseConfig.getString("db.user")
   val dbPassword = databaseConfig.getString("db.password")
 
-  val authCognito = authenticationConfig.getString("cognito")
+  val authCognitoPoolId = authenticationConfig.getString("cognito-pool-id")
   val allowAll = authenticationConfig.getBoolean("allow-all")
 
   private def getDuration(key: String) = FiniteDuration(config.getDuration(key, MILLISECONDS), MILLISECONDS)
